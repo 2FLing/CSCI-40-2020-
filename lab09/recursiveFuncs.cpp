@@ -42,7 +42,7 @@ bool isPalindromeRecursive(const string str) {
 	else
 	{
 		if (str.at(0) == str.at(str.size() - 1))
-			isPalindromeRecursive(str.substr(1, str.size() - 1));
+			return isPalindromeRecursive(str.substr(1, str.size() - 2));
 		else
 			return false;
 	}
